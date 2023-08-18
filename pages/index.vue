@@ -7,7 +7,8 @@
 </template>
 
 <script setup>
-    
+// const { $pwa } = useNuxtApp()
+
 </script>
 
 <style lang="scss">

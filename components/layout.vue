@@ -1,5 +1,7 @@
 <template>
-    <div class="layout" id="layout"></div>
+    <div class="layout" id="layout">
+        <logoBlank />
+    </div>
 </template>
 
 <script setup>
