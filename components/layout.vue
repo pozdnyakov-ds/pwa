@@ -1,11 +1,16 @@
 <template>
     <div class="layout" id="layout">
-        <logoBlank />
+        <logoBlank v-if="!state.isCode"/>
     </div>
 </template>
 
 <script setup>
-    
+import { useStorage } from '@vueuse/core'
+const state = useStorage('display', { isCode: false, code: '' })
+if (!state.isCode) {
+    localStorage.setItem('display', { isCode: false, code: '' })
+}
+
 </script>
 
 <style lang="scss" scoped>
