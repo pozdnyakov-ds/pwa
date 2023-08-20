@@ -2,13 +2,23 @@
   <div>
     <VitePwaManifest />
     <Toolbar></Toolbar>
-    <Layout></Layout>
+    <WorkArea></WorkArea>
   </div>
 </template>
 
 <script setup>
-// const { $pwa } = useNuxtApp()
+import { useStorage } from '@vueuse/core'
+const state = useStorage('display', { isCode: false, code: '', lang: 'ru', timezone: 'GMT+3' })
 
+onMounted(() => {
+  if (state.value.isCode) {
+    let code = getCurrentInstance().proxy.$t('index.started_with_code')
+    useNuxtApp().$toast.success(code + state.value.code)
+  } else {
+    let code = getCurrentInstance().proxy.$t('index.started')
+    useNuxtApp().$toast.success(code)
+  }
+})
 </script>
 
 <style lang="scss">

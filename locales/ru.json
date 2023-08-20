@@ -1,0 +1,17 @@
+{
+  index: {
+    title: "Cafecard.TV",
+    open: "Открыть",
+    save: "Сохранить",
+    close: "Закрыть",
+    render: "Рендер данных...",
+    started: "Старт приложения",
+    started_with_code: "Старт с дисплеем: ",
+    set_display_code: "Указать код дисплея:",
+    code: "Код",
+    save_code: "Код сохранен",
+    code_rules: "Нужно указать код дисплея",
+    code_rules_10: "Код должен иметь длину 10 символов!",
+    waiting_connection: "Ожидание соединения..."
+  }
+}

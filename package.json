@@ -9,10 +9,20 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@intlify/nuxt3": "^0.2.4",
     "@nuxt/devtools": "latest",
     "@types/node": "^18.17.3",
     "@vite-pwa/nuxt": "^0.1.0",
+    "@vueuse/core": "^10.3.0",
+    "@vueuse/nuxt": "^10.3.0",
     "nuxt": "^3.6.5",
     "sass": "^1.66.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.2",
+    "@mdi/font": "^7.2.96",
+    "jshint": "^2.13.6",
+    "vue3-toastify": "^0.0.6",
+    "vuetify": "^3.4.0-alpha.0"
   }
 }
