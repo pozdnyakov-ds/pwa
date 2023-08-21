@@ -14,7 +14,7 @@
 
 <script setup>
 import { useStorage } from '@vueuse/core'
-const state = useStorage('display', { isCode: false, code: '' })
+const state = useStorage('display', { isCode: false, code: '', locale: 'ru', timezone: 'GMT+3' })
 
 </script>
 

@@ -1,0 +1,19 @@
+{
+    index: {
+      language: "Language",
+      timezone: "Timezone",
+      title: "Cafecard.TV",
+      open: "Open",
+      save: "Save",
+      close: "Close",
+      render: "Render data for display: ",
+      started: "App start",
+      started_with_code: "Start with display: ",
+      set_display_code: "Set display code, interface language and timezone",
+      code: "Code",
+      save_code: "Code saved: ",
+      code_rules: "Please set display code",
+      code_rules_10: "Code must be have 10 symbols!",
+      waiting_connection: "Waiting connection..."
+    }
+  }

@@ -1,10 +1,12 @@
 <template>
     <div class="layout" id="layout">
-        <p>{{ $t('index.render') }}</p>
+        <p>{{ $t('index.render') }}{{ state.code }}</p>
     </div>
 </template>
 
 <script setup>
+import { useStorage } from '@vueuse/core'
+const state = useStorage('display', { isCode: false, code: '', locale: 'ru', timezone: 'GMT+3' })
 
 </script>
 
