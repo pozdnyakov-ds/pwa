@@ -54,7 +54,7 @@
 // AN73PYPXW9
 import { useStorage } from '@vueuse/core'
 const timezone = (new Date().toString().match(/([A-Z]+[\+-][0-9]+.*)/)[1]).substring(0, 6)
-console.log("timezone: ", timezone)
+//console.log("timezone: ", timezone)
 
 const state = useStorage('display', { isCode: false, code: '0123456789', locale: 'ru', timezone: 'GMT+03' })
 const stateCode = ref(state.value.code)
