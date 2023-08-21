@@ -7,22 +7,22 @@
 </template>
 
 <script setup>
-import { initializeApp } from "firebase/app";
-import { getMessaging, isSupported } from "firebase/messaging";
-const firebaseConfig = {
-  apiKey: "AIzaSyCf9EH9DJnbHVZAQkYZEYySoX3Zvr-1lbg",
-  authDomain: "cafecard-e3729.firebaseapp.com",
-  databaseURL: "https://cafecard-e3729.firebaseio.com",
-  projectId: "cafecard-e3729",
-  storageBucket: "cafecard-e3729.appspot.com",
-  messagingSenderId: "700682171623",
-  appId: "1:700682171623:web:471ee3447e7b4f41095e42",
-  measurementId: "G-JXJY457LXB"
-}
+// import { initializeApp } from "firebase/app";
+// import { getMessaging, isSupported } from "firebase/messaging";
+// const firebaseConfig = {
+//   apiKey: "AIzaSyCf9EH9DJnbHVZAQkYZEYySoX3Zvr-1lbg",
+//   authDomain: "cafecard-e3729.firebaseapp.com",
+//   databaseURL: "https://cafecard-e3729.firebaseio.com",
+//   projectId: "cafecard-e3729",
+//   storageBucket: "cafecard-e3729.appspot.com",
+//   messagingSenderId: "700682171623",
+//   appId: "1:700682171623:web:471ee3447e7b4f41095e42",
+//   measurementId: "G-JXJY457LXB"
+// }
 
-const app = initializeApp(firebaseConfig)
-const messaging = getMessaging(app)
-console.log("messaging: ", messaging)
+// const app = initializeApp(firebaseConfig)
+// const messaging = getMessaging(app)
+// console.log("messaging: ", messaging)
 
 import { useStorage } from '@vueuse/core'
 const state = useStorage('display', { isCode: false, code: '', locale: 'ru', timezone: 'GMT+3' })
