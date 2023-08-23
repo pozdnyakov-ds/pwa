@@ -4,7 +4,7 @@
   "scripts": {
     "build": "nuxt build",
     "start": "nuxt start",
-    "dev": "nuxt dev NODE_TLS_REJECT_UNAUTHORIZED=0 --https --host 0.0.0.0 --ssl-cert ssl/localhost.pem --ssl-key ssl/localhost.key",
+    "dev": "nuxt dev --https --host 0.0.0.0 --ssl-cert ssl/localhost.pem --ssl-key ssl/localhost.key",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
