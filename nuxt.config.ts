@@ -1,4 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
     head: {
@@ -20,6 +19,12 @@ export default defineNuxtConfig({
     transpile: ['vuetify'],
   },
   devtools: { enabled: true },
+  devServer: {
+    https: {
+      key: 'ssl/localhost.key',
+      cert: 'ssl/localhost.pem'
+    }
+  },
   modules: [
     '@vite-pwa/nuxt',
     '@vueuse/nuxt',

@@ -103,7 +103,7 @@ const saveCode = (mess, locale) => {
     background-color: #fff;
     padding: 0px;
     margin: 40px 0 0 0;
-    width: 30%;
+    width: 40%;
 }
 p {
     margin: 10px 0 0 0;
